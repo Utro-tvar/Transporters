@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71236791b3409214f9986d4e3163e454, type: 3}
+  m_Name: Medium
+  m_EditorClassIdentifier: 
+  MinSpeed: 1
+  MaxSpeed: 2
+  Boost: 0.3
+  ItemInterval: 2
+  HP: 5
+  Setting: {fileID: 11400000, guid: fb06840a0cadca140b166d7d8c9eafe6, type: 2}
+  Lines:
+  - Color: {r: 1, g: 0, b: 0, a: 1}
+    ItemSprites:
+    - {fileID: 6163753181804843332, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
+  - Color: {r: 0, g: 0.22551966, b: 1, a: 1}
+    ItemSprites:
+    - {fileID: 6163753181804843332, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
+  - Color: {r: 1, g: 0, b: 0.9456892, a: 1}
+    ItemSprites:
+    - {fileID: 6163753181804843332, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
+  - Color: {r: 0, g: 1, b: 0.05528426, a: 1}
+    ItemSprites:
+    - {fileID: 6163753181804843332, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
