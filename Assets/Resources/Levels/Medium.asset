@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinSpeed: 1
   MaxSpeed: 2
-  Boost: 0.3
+  Boost: 0.1
   ItemInterval: 2
   HP: 5
-  Setting: {fileID: 11400000, guid: fb06840a0cadca140b166d7d8c9eafe6, type: 2}
+  Setting: {fileID: 11400000, guid: 7838a1fa5f292f048bbaf339436ca02e, type: 2}
   Lines:
-  - Color: {r: 1, g: 0, b: 0, a: 1}
+  - Color: {r: 0.9245283, g: 0, b: 0, a: 1}
     ItemSprites:
-    - {fileID: 6163753181804843332, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
-  - Color: {r: 0, g: 0.22551966, b: 1, a: 1}
+    - {fileID: -239357831373036101, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
+  - Color: {r: 0.38557565, g: 0.9339623, b: 0.030838395, a: 1}
     ItemSprites:
-    - {fileID: 6163753181804843332, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
-  - Color: {r: 1, g: 0, b: 0.9456892, a: 1}
+    - {fileID: -8049098574273981475, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
+  - Color: {r: 0.9811321, g: 0.49771598, b: 0, a: 1}
     ItemSprites:
-    - {fileID: 6163753181804843332, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
-  - Color: {r: 0, g: 1, b: 0.05528426, a: 1}
+    - {fileID: 5602229211796247232, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
+  - Color: {r: 0, g: 0, b: 0, a: 1}
     ItemSprites:
-    - {fileID: 6163753181804843332, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}
+    - {fileID: -1836358465676268829, guid: ea494b36aa7c820419cd0754029f0b59, type: 3}

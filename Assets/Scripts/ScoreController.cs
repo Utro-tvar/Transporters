@@ -32,7 +32,7 @@ public class ScoreController : MonoBehaviour
     private void AddScore()
     {
         ++_score;
-        _text.text = "Score: " + _score;
+        _text.text = _score.ToString();
     }
 
     private void SetFinalScore()

@@ -8,15 +8,12 @@ public class HP : MonoBehaviour
     public static event Action GameOver;
 
 
-    private HeartsGrid _heartGrid;
+    private IHPIndicator _indicator;
 
     private void Start()
     {
-        _heartGrid = GetComponent<HeartsGrid>();
-        for(int i = 0; i < GameInfo.Instanse.HP; ++i)
-        {
-            _heartGrid.AddHeart();
-        }
+        _indicator = GetComponent<IHPIndicator>();
+        _indicator.Init(GameInfo.Instanse.HP);
     }
 
     private void OnEnable()
@@ -31,7 +28,6 @@ public class HP : MonoBehaviour
 
     private void RemoveHeart()
     {
-        _heartGrid.TryRemoveHeart();
-        if (_heartGrid.GetHeartsCount() == 0) GameOver?.Invoke();
+        if (!_indicator.TryRemoveHP() || _indicator.GetHP() == 0) GameOver?.Invoke();
     }
 }

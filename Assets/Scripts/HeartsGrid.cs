@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeartsGrid : MonoBehaviour
+public class HeartsGrid : MonoBehaviour, IHPIndicator
 {
     public enum StartPosition { Left, Right}
 
@@ -22,7 +22,15 @@ public class HeartsGrid : MonoBehaviour
     private Vector2 _newPosition;
     private int _direction;
 
-    public void AddHeart()
+    public void Init(int hpCount)
+    {
+        for(int i = 0; i < hpCount; ++i)
+        {
+            AddHeart();
+        }
+    }
+
+    private void AddHeart()
     {
         GameObject heart = Instantiate(_heart, transform);
         _hearts.Push(heart);
@@ -30,7 +38,7 @@ public class HeartsGrid : MonoBehaviour
         _newPosition += new Vector2((_heartsSize.x + _spacing) * _direction, 0);
     }
 
-    public bool TryRemoveHeart()
+    public bool TryRemoveHP()
     {
         if(_hearts.Count > 0)
         {
@@ -40,7 +48,7 @@ public class HeartsGrid : MonoBehaviour
         return false;
     }
 
-    public int GetHeartsCount()
+    public int GetHP()
     {
         return _hearts.Count;
     }
